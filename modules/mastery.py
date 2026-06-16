@@ -38,13 +38,6 @@ def run_mastery_body(running_flag, phase_callback=None, countdown_callback=None)
     gsend("{Enter up}")
 
     if phase_callback:
-        phase_callback(f"继续开 {cfg.MA_DRIVE_EXTRA // 1000}s")
-    if not interrupt_sleep(cfg.MA_DRIVE_EXTRA, running_flag, countdown_callback):
-        gsend("{w up}")
-        return False
-    gsend("{w up}")
-
-    if phase_callback:
         phase_callback("等待结算画面")
     wait_start = int(time.time() * 1000)
     got_result = False

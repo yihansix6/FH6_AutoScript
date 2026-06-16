@@ -249,7 +249,7 @@ class AppGUI(QWidget):
         hbox.addWidget(self._val("countdown", "—", SC["cyan"]))
         hbox.addStretch()
         lay.addLayout(hbox)
-        self.entry_b_loop = NumericEntry("100")
+        self.entry_b_loop = NumericEntry("1")
         lay.addLayout(self._row("手动次数:", self.entry_b_loop))
         left_panel.addLayout(lay)
         left_panel.addWidget(Separator())

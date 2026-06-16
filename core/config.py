@@ -42,13 +42,12 @@ DC_ESC_FINAL    = 800
 
 # ── 熟练度循环 参数 ──
 MA_INIT_WAIT    = 3000
-MA_DRIVE_MS     = 18000
-MA_DRIVE_EXTRA  = 2000
+MA_DRIVE_MS     = 100000
 MA_SETTLE_MS    = 4000
-POINTS_PER_LOOP = 10
+POINTS_PER_LOOP = 50
 
 # ── 自动大循环配置 ──
-AUTO_MASTERY_LOOPS = 101   # 每轮刷熟练度圈数
+AUTO_MASTERY_LOOPS = 21   # 每轮刷熟练度圈数
 AUTO_BUYCAR_TIMES  = 33    # 每轮买车次数
 AUTO_DELCAR_TIMES  = 33    # 每轮删车次数
 AUTO_AWARD_TIMES   = 33    # 每轮抽奖次数
